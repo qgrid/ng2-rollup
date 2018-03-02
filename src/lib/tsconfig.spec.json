@@ -1,0 +1,20 @@
+{
+  "extends": "../../tsconfig.json",
+  "compilerOptions": {
+    "baseUrl": "",
+    "module": "commonjs",
+    "declaration": false,
+    "emitDecoratorMetadata": true,
+    "paths": {
+      "ng2-qgrid/core/*": [
+        "./core/*"
+      ],
+      "ng2-qgrid/*": [
+        "./src/*"
+      ],
+      "ng2-qgrid/plugin/*": [
+        "./plugin/*"
+      ]
+    }
+  }
+}

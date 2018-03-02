@@ -1,0 +1,33 @@
+{
+  "extends": "./tsconfig.lib.json",
+  "compilerOptions": {
+    "target": "es5",
+    "outDir": "../../out-tsc/lib-es5/",
+    "baseUrl": "",
+    "types": [],
+    "paths": {
+      "ng2-qgrid/core/*": [
+        "./core/*"
+      ],
+      "ng2-qgrid/*": [
+        "./src/*"
+      ],
+      "ng2-qgrid/plugin/*": [
+        "./plugin/*"
+      ]
+    }
+  },
+  "files": [
+    "./index.ts",
+    "./typings.d.ts"
+  ],
+  "angularCompilerOptions": {
+    "annotateForClosureCompiler": true,
+    "strictMetadataEmit": true,
+    "skipTemplateCodegen": true,
+    "flatModuleOutFile": "ng2-qgrid.js",
+    "flatModuleId": "ng2-qgrid",
+    "genDir": "../../out-tsc/lib-gen-dir/",
+    "fullTemplateTypeCheck": true
+  }
+}
